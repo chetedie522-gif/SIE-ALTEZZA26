@@ -1,0 +1,144 @@
+{
+ "partidas": [
+  {
+   "codigo": "RU.OBPL.0010",
+   "capitulo": "A",
+   "cap_nombre": "A · Trabajos preliminares",
+   "descripcion": "Marcación y Replanteo",
+   "objetivo": 5593000
+  },
+  {
+   "codigo": "RU.OBPL.0008",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "Excavación para fundaciones - con minipala",
+   "objetivo": 699019
+  },
+  {
+   "codigo": "RU.ESHA.00101",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "Zapata de HE fck 250",
+   "objetivo": 2843392
+  },
+  {
+   "codigo": "RU.ESHA.0120",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "Fustes de H°A°20X60",
+   "objetivo": 6042874
+  },
+  {
+   "codigo": "RU.ESHA.0121",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "VigasFundación H°A°. fck= 210 kg/cm2",
+   "objetivo": 0
+  },
+  {
+   "codigo": "RU.ESHA.00124",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "Cimiento de Piedra Bruta Colocada",
+   "objetivo": 8457568
+  },
+  {
+   "codigo": "RU.ESHA.00119",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "Cabezales de H°A° sobre tubulón. Fck 200 - Fyk 500",
+   "objetivo": 288644
+  },
+  {
+   "codigo": "RU.TEEM.0016",
+   "capitulo": "D",
+   "cap_nombre": "D · Estructura metálica cubierta",
+   "descripcion": "Techo de Chapa - Apoyados en porticos tipo - altura 3m. - Cubierta de Chapa EPS = 30MM",
+   "objetivo": 95668800
+  },
+  {
+   "codigo": "RU.EMPL.0019",
+   "capitulo": "D",
+   "cap_nombre": "D · Estructura metálica cubierta",
+   "descripcion": "Pilares metálicos Para techo en PB",
+   "objetivo": 24001614
+  },
+  {
+   "codigo": "RU.CATE.0001",
+   "capitulo": "F",
+   "cap_nombre": "F · Canaletas y cerramientos",
+   "descripcion": "Canaletas",
+   "objetivo": 4690300
+  },
+  {
+   "codigo": "RU.CATE.0003",
+   "capitulo": "F",
+   "cap_nombre": "F · Canaletas y cerramientos",
+   "descripcion": "Boqueta",
+   "objetivo": 958368
+  },
+  {
+   "codigo": "RU.CATE.0005",
+   "capitulo": "F",
+   "cap_nombre": "F · Canaletas y cerramientos",
+   "descripcion": "CAÑOS DE BAJADA DE 150MM",
+   "objetivo": 423880
+  },
+  {
+   "codigo": "RU.TEEM.0017",
+   "capitulo": "F",
+   "cap_nombre": "F · Canaletas y cerramientos",
+   "descripcion": "CENEFA h=60cm",
+   "objetivo": 28476945
+  },
+  {
+   "codigo": "RU.CATE.0006",
+   "capitulo": "F",
+   "cap_nombre": "F · Canaletas y cerramientos",
+   "descripcion": "Babetas de chapa",
+   "objetivo": 7943250
+  },
+  {
+   "codigo": "CI.GEN",
+   "capitulo": "CI",
+   "cap_nombre": "CI · Costes indirectos",
+   "descripcion": "Costes indirectos",
+   "objetivo": 21216000
+  },
+  {
+   "codigo": "A.GEN",
+   "capitulo": "A",
+   "cap_nombre": "A · Trabajos preliminares",
+   "descripcion": "(genérico del capítulo)",
+   "objetivo": 0
+  },
+  {
+   "codigo": "C.GEN",
+   "capitulo": "C",
+   "cap_nombre": "C · Estructura H°A°",
+   "descripcion": "(genérico del capítulo)",
+   "objetivo": 0
+  },
+  {
+   "codigo": "D.GEN",
+   "capitulo": "D",
+   "cap_nombre": "D · Estructura metálica cubierta",
+   "descripcion": "(genérico del capítulo)",
+   "objetivo": 0
+  },
+  {
+   "codigo": "F.GEN",
+   "capitulo": "F",
+   "cap_nombre": "F · Canaletas y cerramientos",
+   "descripcion": "(genérico del capítulo)",
+   "objetivo": 0
+  }
+ ],
+ "cap_totales": {
+  "A": 5593000,
+  "C": 18331497,
+  "D": 119670414,
+  "F": 42492743,
+  "CI": 21216000
+ }
+}

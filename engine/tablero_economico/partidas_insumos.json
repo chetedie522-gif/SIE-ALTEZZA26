@@ -1,0 +1,781 @@
+{
+ "partidas": [
+  {
+   "id": "P01",
+   "cod": "RU.OBPL.0010",
+   "cap": "A",
+   "cap_nom": "A · Trabajos preliminares",
+   "desc": "Marcación y Replanteo",
+   "obj": 5593000,
+   "insumos": [
+    {
+     "cod": "IN.MOOP.0005",
+     "desc": "MO. Marcacion y replanteo",
+     "cant": 238,
+     "unidad": "m2",
+     "total": 1666000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "INSBOP.0009",
+     "desc": "SUB. Marcación y Replanteo.",
+     "cant": 238,
+     "unidad": "m2",
+     "total": 3927000,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P02",
+   "cod": "RU.OBPL.0008",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "Excavación para fundaciones - con minipala",
+   "obj": 699019,
+   "insumos": [
+    {
+     "cod": "IN.SBMS.0001",
+     "desc": "Excavación con mini pala VOLCARGA",
+     "cant": 7.92,
+     "unidad": "m3",
+     "total": 316800,
+     "tipo": "SUB"
+    },
+    {
+     "cod": "IN.SBMS.0002",
+     "desc": "Retiro en contenedores tierra normal",
+     "cant": 3.96,
+     "unidad": "u",
+     "total": 174240,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.SBMS.0003",
+     "desc": "Traslado mini pala VOLCARGA (aeropuerto)",
+     "cant": 0.198,
+     "unidad": "u",
+     "total": 59400,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MOOP.0001",
+     "desc": "MO. Perfilacion de excavacion A.S.",
+     "cant": 7.428959999999999,
+     "unidad": "m2",
+     "total": 148579,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P03",
+   "cod": "RU.ESHA.00101",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "Zapata de HE fck 250",
+   "obj": 2843392,
+   "insumos": [
+    {
+     "cod": "IN.MAHG.0005",
+     "desc": "Hormigon elab fck=210 kg/cm2 As= 18 Bombeado en asuncion",
+     "cant": 1.23,
+     "unidad": "m3",
+     "total": 1365300,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0005",
+     "desc": "Varillas Estriada e= 12mm AP 500 Ac Py",
+     "cant": 50.43,
+     "unidad": "kg",
+     "total": 410298,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAHG.00012",
+     "desc": "Traslado Bomba cargamento menor a 15m3",
+     "cant": 0.11685,
+     "unidad": "un",
+     "total": 254149,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAFI.0014",
+     "desc": "Alambre de trinca nro 18 (atar)",
+     "cant": 1.23,
+     "unidad": "kg",
+     "total": 14145,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.SBFU.0012",
+     "desc": "Sub. MO. Zapatas H°A°",
+     "cant": 1.23,
+     "unidad": "m3",
+     "total": 799500,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P04",
+   "cod": "RU.ESHA.0120",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "Fustes de H°A°20X60",
+   "obj": 6042874,
+   "insumos": [
+    {
+     "cod": "IN.MAFI.0001",
+     "desc": "Alambre de atar",
+     "cant": 19.2,
+     "unidad": "kg",
+     "total": 96000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.SBFU.0013",
+     "desc": "Sub. MO. FUSTES H°A°",
+     "cant": 19.2,
+     "unidad": "ml",
+     "total": 2688000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0001",
+     "desc": "Varillas Estriada e= 6mm AP 500 Ac Py",
+     "cant": 60.672,
+     "unidad": "kg",
+     "total": 533914,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0005",
+     "desc": "Piedra Triturada",
+     "cant": 4.128,
+     "unidad": "tn",
+     "total": 714144,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0002",
+     "desc": "Arena Lavada - Bapesa",
+     "cant": 1.92,
+     "unidad": "m3",
+     "total": 122880,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACE.0001",
+     "desc": "Cemento Yguazu CP32 BOLSA:50kg",
+     "cant": 22.272,
+     "unidad": "un",
+     "total": 1592448,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0002",
+     "desc": "Varillas Estriada e= 8mm AP 500 Ac Py",
+     "cant": 23.04,
+     "unidad": "kg",
+     "total": 186624,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0004",
+     "desc": "Varillas Estriada e= 10mm AP 500 Ac Py",
+     "cant": 13.44,
+     "unidad": "kg",
+     "total": 108864,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P05",
+   "cod": "RU.ESHA.0121",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "VigasFundación H°A°. fck= 210 kg/cm2",
+   "obj": 0,
+   "insumos": [
+    {
+     "cod": "IN.MAFI.0013",
+     "desc": "Clavo 2x11\" gallo",
+     "cant": 0,
+     "unidad": "kg",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAFI.0001",
+     "desc": "Alambre de atar",
+     "cant": 0,
+     "unidad": "kg",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0001",
+     "desc": "Varillas Estriada e= 6mm AP 500 Ac Py",
+     "cant": 0,
+     "unidad": "kg",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0004",
+     "desc": "Varillas Estriada e= 10mm AP 500 Ac Py",
+     "cant": 0,
+     "unidad": "kg",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0005",
+     "desc": "Varillas Estriada e= 12mm AP 500 Ac Py",
+     "cant": 0,
+     "unidad": "kg",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0006",
+     "desc": "Varillas Estriada e= 16mm AP 500 Ac Py",
+     "cant": 0,
+     "unidad": "kg",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.SBEH.0008",
+     "desc": "SUB. M.O. Vigas H°A°",
+     "cant": 0,
+     "unidad": "ml",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACE.0001",
+     "desc": "Cemento Yguazu CP32 BOLSA:50kg",
+     "cant": 0,
+     "unidad": "un",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0005",
+     "desc": "Piedra Triturada",
+     "cant": 0,
+     "unidad": "tn",
+     "total": 0,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0002",
+     "desc": "Arena Lavada - Bapesa",
+     "cant": 0,
+     "unidad": "m3",
+     "total": 0,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P06",
+   "cod": "RU.ESHA.00124",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "Cimiento de Piedra Bruta Colocada",
+   "obj": 8457568,
+   "insumos": [
+    {
+     "cod": "IN.MAFI.0001",
+     "desc": "Alambre de atar",
+     "cant": 9.52,
+     "unidad": "kg",
+     "total": 47600,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAFI.0012",
+     "desc": "Alambre de trinca nro 9",
+     "cant": 13.328,
+     "unidad": "kg",
+     "total": 152326,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACE.0001",
+     "desc": "Cemento Yguazu CP32 BOLSA:50kg",
+     "cant": 19.04,
+     "unidad": "un",
+     "total": 1361360,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0002",
+     "desc": "Arena Lavada - Bapesa",
+     "cant": 5.712,
+     "unidad": "m3",
+     "total": 365568,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0006",
+     "desc": "Piedra bruta",
+     "cant": 22.848,
+     "unidad": "m3",
+     "total": 2627520,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACE.0002",
+     "desc": "Cal hidratada bolsa de 25kg",
+     "cant": 571.1999999999999,
+     "unidad": "kg",
+     "total": 685440,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACE.0009",
+     "desc": "Murokal",
+     "cant": 19.04,
+     "unidad": "lt",
+     "total": 266560,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.SBFU.0015",
+     "desc": "SUB. Cimiento de PBC",
+     "cant": 19.04,
+     "unidad": "m3",
+     "total": 2951200,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P07",
+   "cod": "RU.ESHA.00119",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "Cabezales de H°A° sobre tubulón. Fck 200 - Fyk 500",
+   "obj": 288644,
+   "insumos": [
+    {
+     "cod": "IN.MAFI.0014",
+     "desc": "Alambre de trinca nro 18 (atar)",
+     "cant": 0.22,
+     "unidad": "kg",
+     "total": 2530,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.SBEH.0005",
+     "desc": "SUB. M.O. CABEZAL SOBRE PILOTES",
+     "cant": 0.22,
+     "unidad": "m3",
+     "total": 132000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0001",
+     "desc": "Varillas Estriada e= 6mm AP 500 Ac Py",
+     "cant": 0.1892,
+     "unidad": "kg",
+     "total": 1665,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAVA.0006",
+     "desc": "Varillas Estriada e= 16mm AP 500 Ac Py",
+     "cant": 2.64,
+     "unidad": "kg",
+     "total": 21384,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACE.0008",
+     "desc": "Cemento portland CECON bolsa de 50kg",
+     "cant": 1.54,
+     "unidad": "u",
+     "total": 95480,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0005",
+     "desc": "Piedra Triturada",
+     "cant": 0.165,
+     "unidad": "tn",
+     "total": 28545,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAR.0002",
+     "desc": "Arena Lavada - Bapesa",
+     "cant": 0.11066,
+     "unidad": "m3",
+     "total": 7082,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P08",
+   "cod": "RU.TEEM.0016",
+   "cap": "D",
+   "cap_nom": "D · Estructura metálica cubierta",
+   "desc": "Techo de Chapa - Apoyados en porticos tipo - altura 3m. - Cubierta de Chapa EPS = 30MM",
+   "obj": 95668800,
+   "insumos": [
+    {
+     "cod": "IN.SBEM.0002",
+     "desc": "Sub. MO montaje, de techo.",
+     "cant": 380,
+     "unidad": "m2",
+     "total": 32300000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MACU.0010",
+     "desc": "CHAPA SANDWICH - EPS 30MM-BLANCO/GALV",
+     "cant": 399,
+     "unidad": "m2",
+     "total": 37905000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0094",
+     "desc": "C 160x60x17x3.00mm Perfil laminado de chapa plegada ASTM-A36",
+     "cant": 45.6,
+     "unidad": "un",
+     "total": 14181600,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0095",
+     "desc": "Caño 80x120 en 3,00mm",
+     "cant": 38,
+     "unidad": "un",
+     "total": 16222200,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P09",
+   "cod": "RU.EMPL.0019",
+   "cap": "D",
+   "cap_nom": "D · Estructura metálica cubierta",
+   "desc": "Pilares metálicos Para techo en PB",
+   "obj": 24001614,
+   "insumos": [
+    {
+     "cod": "IN.SBEM.0012",
+     "desc": "Sub. MO Montaje de Pilares RET",
+     "cant": 91,
+     "unidad": "ml",
+     "total": 6370000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAFI.0004",
+     "desc": "Electrodo 3.25mm p/ acero",
+     "cant": 15.47,
+     "unidad": "kg",
+     "total": 201110,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAPI.0012",
+     "desc": "Antioxido GRIS OSCURO STANDARD 18Lts Quimaflex",
+     "cant": 22.75,
+     "unidad": "un",
+     "total": 6517875,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAPI.0013",
+     "desc": "THINNER UNIVERSAL EXTRA 5LTS QUIMAFLEX",
+     "cant": 11.83,
+     "unidad": "un",
+     "total": 910910,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0054",
+     "desc": "Disco de corte de 9 - caja de 25 un",
+     "cant": 1.274,
+     "unidad": "un",
+     "total": 726180,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0093",
+     "desc": "CAÑO CUAD.100 X 100 X 4.75MM X6MTS",
+     "cant": 15.106000000000002,
+     "unidad": "un",
+     "total": 10326220,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P10",
+   "cod": "RU.CATE.0001",
+   "cap": "F",
+   "cap_nom": "F · Canaletas y cerramientos",
+   "desc": "Canaletas",
+   "obj": 4690300,
+   "insumos": [
+    {
+     "cod": "IN.SBCA.0007",
+     "desc": "Sub. doblado de chapa para canaleta",
+     "cant": 31,
+     "unidad": "un",
+     "total": 620000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0026",
+     "desc": "Chapa galvanizada Nro 22 2,00 x 1,00 mts",
+     "cant": 31,
+     "unidad": "un",
+     "total": 2520300,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MOCA.0001",
+     "desc": "MO. Canaleta Embutidas montaje",
+     "cant": 62,
+     "unidad": "ml",
+     "total": 1550000,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P11",
+   "cod": "RU.CATE.0003",
+   "cap": "F",
+   "cap_nom": "F · Canaletas y cerramientos",
+   "desc": "Boqueta",
+   "obj": 958368,
+   "insumos": [
+    {
+     "cod": "IN.SBCA.0007",
+     "desc": "Sub. doblado de chapa para canaleta",
+     "cant": 8,
+     "unidad": "un",
+     "total": 160000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0026",
+     "desc": "Chapa galvanizada Nro 22 2,00 x 1,00 mts",
+     "cant": 7.36,
+     "unidad": "un",
+     "total": 598368,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MOCA.0001",
+     "desc": "MO. Canaleta Embutidas montaje",
+     "cant": 8,
+     "unidad": "ml",
+     "total": 200000,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P12",
+   "cod": "RU.CATE.0005",
+   "cap": "F",
+   "cap_nom": "F · Canaletas y cerramientos",
+   "desc": "CAÑOS DE BAJADA DE 150MM",
+   "obj": 423880,
+   "insumos": [
+    {
+     "cod": "IN.MOCA.0001",
+     "desc": "MO. Canaleta Embutidas montaje",
+     "cant": 6,
+     "unidad": "ml",
+     "total": 150000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MASP.0001",
+     "desc": "Caño 150mm de PVC tira de 6mts",
+     "cant": 1.6700000000000002,
+     "unidad": "un",
+     "total": 273880,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P13",
+   "cod": "RU.TEEM.0017",
+   "cap": "F",
+   "cap_nom": "F · Canaletas y cerramientos",
+   "desc": "CENEFA h=60cm",
+   "obj": 28476945,
+   "insumos": [
+    {
+     "cod": "IN.SBEM.0004",
+     "desc": "Sub. MO montaje, cenefas.",
+     "cant": 105,
+     "unidad": "ml",
+     "total": 5775000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0032",
+     "desc": "C 100x40x17x2.0mm Perfil laminado de chapa plegada ASTM-A36",
+     "cant": 117.60000000000001,
+     "unidad": "un",
+     "total": 15405600,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0096",
+     "desc": "Chapa LAF N°16 1,20X1,40",
+     "cant": 34.65,
+     "unidad": "un",
+     "total": 7296320,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P14",
+   "cod": "RU.CATE.0006",
+   "cap": "F",
+   "cap_nom": "F · Canaletas y cerramientos",
+   "desc": "Babetas de chapa",
+   "obj": 7943250,
+   "insumos": [
+    {
+     "cod": "IN.SBCA.0007",
+     "desc": "Sub. doblado de chapa para canaleta",
+     "cant": 52.5,
+     "unidad": "un",
+     "total": 1050000,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MAAN.0026",
+     "desc": "Chapa galvanizada Nro 22 2,00 x 1,00 mts",
+     "cant": 52.5,
+     "unidad": "un",
+     "total": 4268250,
+     "tipo": "CD"
+    },
+    {
+     "cod": "IN.MOCA.0001",
+     "desc": "MO. Canaleta Embutidas montaje",
+     "cant": 105,
+     "unidad": "ml",
+     "total": 2625000,
+     "tipo": "CD"
+    }
+   ]
+  },
+  {
+   "id": "P15",
+   "cod": "CI.GEN",
+   "cap": "CI",
+   "cap_nom": "CI · Costes indirectos",
+   "desc": "Costes indirectos",
+   "obj": 21216000,
+   "insumos": [
+    {
+     "cod": "INSBOP.0008",
+     "desc": "SUB. Baño portatil",
+     "cant": 3,
+     "unidad": "mes",
+     "total": 2316000,
+     "tipo": "CI"
+    },
+    {
+     "cod": "IN.MEFL.0001",
+     "desc": "Mov. Torito",
+     "cant": 5,
+     "unidad": "d",
+     "total": 2250000,
+     "tipo": "CI"
+    },
+    {
+     "cod": "IN.SBDE.0002",
+     "desc": "SUB. Retiro de escombros y residuos.",
+     "cant": 5,
+     "unidad": "u",
+     "total": 2250000,
+     "tipo": "CI"
+    },
+    {
+     "cod": "C.I.1",
+     "desc": "AYUDANTE LIMPIEZA",
+     "cant": 3,
+     "unidad": "mes",
+     "total": 5400000,
+     "tipo": "CI"
+    },
+    {
+     "cod": "C.I - RRHH",
+     "desc": "M.O - SEMANA FAUSTO",
+     "cant": 12,
+     "unidad": "SEM",
+     "total": 9000000,
+     "tipo": "CI"
+    }
+   ]
+  },
+  {
+   "id": "P16",
+   "cod": "A.GEN",
+   "cap": "A",
+   "cap_nom": "A · Trabajos preliminares",
+   "desc": "(genérico del capítulo)",
+   "obj": 0,
+   "insumos": []
+  },
+  {
+   "id": "P17",
+   "cod": "C.GEN",
+   "cap": "C",
+   "cap_nom": "C · Estructura H°A°",
+   "desc": "(genérico del capítulo)",
+   "obj": 0,
+   "insumos": []
+  },
+  {
+   "id": "P18",
+   "cod": "D.GEN",
+   "cap": "D",
+   "cap_nom": "D · Estructura metálica cubierta",
+   "desc": "(genérico del capítulo)",
+   "obj": 0,
+   "insumos": []
+  },
+  {
+   "id": "P19",
+   "cod": "F.GEN",
+   "cap": "F",
+   "cap_nom": "F · Canaletas y cerramientos",
+   "desc": "(genérico del capítulo)",
+   "obj": 0,
+   "insumos": []
+  }
+ ],
+ "caps": {
+  "A": "A · Trabajos preliminares",
+  "C": "C · Estructura H°A°",
+  "D": "D · Estructura metálica cubierta",
+  "F": "F · Canaletas y cerramientos",
+  "CI": "CI · Costes indirectos"
+ }
+}

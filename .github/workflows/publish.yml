@@ -1,0 +1,33 @@
+name: Publicar sitio ALTEZZA26
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install openpyxl requests
+
+      - name: Configurar git (para el commit automático)
+        run: |
+          git config user.name "SIE ALTEZZA26 bot"
+          git config user.email "actions@github.com"
+
+      - name: Publicar (sync + recalcular + regenerar + push)
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SIE_SITE_DIR: ${{ github.workspace }}
+        run: python engine/_sistema/publish_site.py
