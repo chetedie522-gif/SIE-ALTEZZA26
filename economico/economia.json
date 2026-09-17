@@ -1,0 +1,71 @@
+{
+  "obra": "Techos y carpintería metálica — Pádel Santa Teresa",
+  "codigo": "ALTEZZA26",
+  "actualizado": "2026-09-17",
+  "base": "Contrato y objetivo con IVA. Margen y k en base homogénea.",
+  "resumen": {
+    "contrato_con_iva": 343254000,
+    "contrato_sin_iva": 312049091,
+    "objetivo_con_iva": 207303654,
+    "objetivo_sin_iva": 188457867,
+    "margen_gs": 135950346,
+    "margen_pct": 39.6,
+    "k": 1.656,
+    "comprometido": 0,
+    "ejecutado": 0,
+    "consumido_pct": 0,
+    "margen_proyectado": 135950346
+  },
+  "capitulos": [
+    {
+      "cap": "A",
+      "nombre": "Trabajos preliminares",
+      "objetivo": 5593000,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "C",
+      "nombre": "Estructura H°A°",
+      "objetivo": 18331497,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "D",
+      "nombre": "Estructura metálica cubierta",
+      "objetivo": 119670414,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "F",
+      "nombre": "Canaletas y cerramientos",
+      "objetivo": 42492743,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "CI",
+      "nombre": "Costes indirectos",
+      "objetivo": 21216000,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    }
+  ],
+  "flujo": [],
+  "flujo_supuesto": true,
+  "esquema_cobro": "PENDIENTE: definir forma de cobro con el cliente",
+  "necesidad_caja": 0,
+  "notas_materiales": "Vigas de fundación H°A° (RU.ESHA.0121) SIN costo objetivo cargado en el PLANIFICADO — corregir y re-extraer."
+}
