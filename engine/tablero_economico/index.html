@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Control economico ALTEZZA26</title><style>
+:root{--bg:#12161c;--card:#1b212a;--card2:#212a35;--line:#2c3540;--txt:#e8ecf1;--mut:#8c98a8;--ok:#2fa76a;--warn:#d9a020;--bad:#e0555f;--acc:#5b8fd6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:16px;max-width:1000px;margin:0 auto}
+.conf{background:rgba(224,85,95,.12);border:1px solid rgba(224,85,95,.35);color:#f0a8ad;border-radius:8px;padding:8px 12px;font-size:12px;font-weight:600;margin-bottom:14px;text-align:center}
+header{margin-bottom:8px;border-bottom:1px solid var(--line);padding-bottom:12px}
+h1{font-size:20px}.sub{color:var(--mut);font-size:13px;margin-top:3px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+.kpi .l{color:var(--mut);font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+.kpi .v{font-size:18px;font-weight:800;margin-top:5px;line-height:1.15}
+.kpi .v.big{font-size:21px}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--mut);margin:24px 0 12px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:right;color:var(--mut);font-weight:600;padding:7px 8px;border-bottom:1px solid var(--line);font-size:11px}
+th:first-child{text-align:left}
+td{padding:8px;border-bottom:1px solid var(--card2);text-align:right;font-variant-numeric:tabular-nums}
+td:first-child{text-align:left}
+tr:last-child td{border-bottom:none}
+.tot td{font-weight:800;border-top:2px solid var(--line);border-bottom:none}
+.bar{height:6px;border-radius:3px;background:var(--card2);overflow:hidden;min-width:60px;margin-top:3px}
+.bar>i{display:block;height:100%}
+.card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px}
+.wrap{overflow-x:auto}
+table.sem{font-size:11px;white-space:nowrap}
+table.sem th,table.sem td{padding:5px 7px}
+table.sem td.rowlbl,table.sem th.rowlbl{text-align:left;position:sticky;left:0;background:var(--card);min-width:150px}
+table.sem tr.gastos td{font-weight:700;border-top:2px solid var(--line)}
+table.sem tr.gastos td.rowlbl{background:var(--card)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-top:8px}
+.legend b{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:middle}
+.note{color:var(--mut);font-size:12px;margin-top:8px;font-style:italic}
+.hl{background:rgba(47,167,106,.12);border:1px solid rgba(47,167,106,.3);border-radius:8px;padding:10px 12px;font-size:13px;margin-top:12px}
+footer{margin-top:26px;color:var(--mut);font-size:11.5px;text-align:center;border-top:1px solid var(--line);padding-top:12px}
+a.back{color:var(--acc);text-decoration:none;font-size:13px;display:inline-block;margin-bottom:8px}
+@media(max-width:640px){.kpis{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><a class="back" href="../">← volver al hub</a><header><h1 id="obra">-</h1><div class="sub" id="meta">cargando...</div></header><div class="conf">CONFIDENCIAL · Solo direccion — contiene costos y margenes. No compartir como el tablero publico.</div><div id="app"></div><footer>SIE ALTEZZA26 · Control economico. Uso interno de direccion.</footer><script>
+const DATA = {
+  "obra": "Techos y carpintería metálica — Pádel Santa Teresa",
+  "codigo": "ALTEZZA26",
+  "actualizado": "2026-09-17",
+  "base": "Contrato y objetivo con IVA. Margen y k en base homogénea.",
+  "resumen": {
+    "contrato_con_iva": 343254000,
+    "contrato_sin_iva": 312049091,
+    "objetivo_con_iva": 207303654,
+    "objetivo_sin_iva": 188457867,
+    "margen_gs": 135950346,
+    "margen_pct": 39.6,
+    "k": 1.656,
+    "comprometido": 0,
+    "ejecutado": 0,
+    "consumido_pct": 0,
+    "margen_proyectado": 135950346
+  },
+  "capitulos": [
+    {
+      "cap": "A",
+      "nombre": "Trabajos preliminares",
+      "objetivo": 5593000,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "C",
+      "nombre": "Estructura H°A°",
+      "objetivo": 18331497,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "D",
+      "nombre": "Estructura metálica cubierta",
+      "objetivo": 119670414,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "F",
+      "nombre": "Canaletas y cerramientos",
+      "objetivo": 42492743,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    },
+    {
+      "cap": "CI",
+      "nombre": "Costes indirectos",
+      "objetivo": 21216000,
+      "comprometido": 0,
+      "real": 0,
+      "desvio": 0,
+      "consumido_pct": 0.0
+    }
+  ],
+  "flujo": [],
+  "flujo_supuesto": true,
+  "esquema_cobro": "PENDIENTE: definir forma de cobro con el cliente",
+  "necesidad_caja": 0,
+  "notas_materiales": "Vigas de fundación H°A° (RU.ESHA.0121) SIN costo objetivo cargado en el PLANIFICADO — corregir y re-extraer."
+};
+
+const f2=n=>new Intl.NumberFormat('es-PY').format(Math.round(n));
+const Mn=n=>(n/1e6).toFixed(0)+'M';
+const gs=n=>f2(n)+' Gs';
+function kpi(l,v,big){return `<div class="kpi"><div class="l">${l}</div><div class="v ${big?'big':''}">${v}</div></div>`;}
+
+function chart(flujo){
+  const W=720,H=320,L=64,R=16,T=16,B=40, iw=W-L-R, ih=H-T-B;
+  const xs=flujo.map((_,i)=>L+ (flujo.length>1? i*iw/(flujo.length-1):iw/2));
+  const vals=flujo.flatMap(f=>[f.ing_acum,f.egr_acum,f.neto_acum]);
+  const ymax=Math.max(...vals), ymin=Math.min(0,...flujo.map(f=>f.neto_acum));
+  const Y=v=>T+ih-(v-ymin)/(ymax-ymin)*ih;
+  const line=(key,col,w)=>`<polyline fill="none" stroke="${col}" stroke-width="${w}" points="${flujo.map((f,i)=>xs[i]+','+Y(f[key])).join(' ')}"/>`;
+  const dots=(key,col)=>flujo.map((f,i)=>`<circle cx="${xs[i]}" cy="${Y(f[key])}" r="3" fill="${col}"/>`).join('');
+  let grid='';
+  const steps=4;
+  for(let i=0;i<=steps;i++){const v=ymin+(ymax-ymin)*i/steps; const y=Y(v);
+    grid+=`<line x1="${L}" y1="${y}" x2="${W-R}" y2="${y}" stroke="#2c3540" stroke-width="1"/>`+
+          `<text x="${L-8}" y="${y+4}" fill="#8c98a8" font-size="10" text-anchor="end">${Mn(v)}</text>`;}
+  let lo=flujo[0],li=0; flujo.forEach((f,i)=>{if(f.neto_acum<lo.neto_acum){lo=f;li=i;}});
+  const xlab=flujo.map((f,i)=>`<text x="${xs[i]}" y="${H-16}" fill="#8c98a8" font-size="10" text-anchor="middle">${f.mes.slice(2)}</text>`).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto">${grid}
+    ${line('ing_acum','#2fa76a',2)}${line('egr_acum','#e0555f',2)}${line('neto_acum','#5b8fd6',3)}
+    ${dots('neto_acum','#5b8fd6')}
+    <circle cx="${xs[li]}" cy="${Y(lo.neto_acum)}" r="5" fill="none" stroke="#e8ecf1" stroke-width="1.5"/>
+    <text x="${xs[li]}" y="${Y(lo.neto_acum)-10}" fill="#e8ecf1" font-size="10" text-anchor="middle">min ${Mn(lo.neto_acum)}</text>
+    ${xlab}</svg>`;
+}
+
+function flujoSemanal(fs){
+  const sem=fs.semanas;
+  // agrupar meses consecutivos para el colspan del header
+  const meses=[]; sem.forEach(s=>{const last=meses[meses.length-1]; if(last&&last.mes===s.mes)last.n++; else meses.push({mes:s.mes,n:1});});
+  const Mn2=n=>n?(n/1e6).toFixed(1)+'M':'—';
+  let h='<div class="wrap"><table class="sem"><thead>';
+  h+='<tr><th class="rowlbl">Rubro \\ Semana</th>'+meses.map(m=>`<th colspan="${m.n}">${m.mes.split(' ')[0].slice(0,3)}</th>`).join('')+'</tr>';
+  h+='<tr><th class="rowlbl"></th>'+sem.map(s=>`<th>S${s.semana}</th>`).join('')+'</tr>';
+  h+='<tr><th class="rowlbl" style="font-weight:400;color:var(--mut)">lunes de la semana</th>'+
+     sem.map(s=>{const[y,m,dd]=s.fecha.split('-');return `<th style="font-weight:400;color:var(--mut);font-size:10px">${dd}/${m}</th>`;}).join('')+'</tr>';
+  h+='</thead><tbody>';
+  fs.filas.forEach(f=>{
+    if(!f.valores.some(v=>v>0)) return;
+    h+=`<tr><td class="rowlbl">${f.cap} · ${f.nombre.slice(0,22)}</td>`+f.valores.map(v=>`<td>${Mn2(v)}</td>`).join('')+'</tr>';
+  });
+  h+=`<tr class="gastos"><td class="rowlbl">💸 Pagos PENDIENTES / cheques a vencer (a disponer en caja)</td>`+fs.gastos.map(v=>`<td style="color:${v>0?'var(--bad)':'var(--mut)'}">${Mn2(v)}</td>`).join('')+'</tr>';
+  h+=`<tr class="gastos"><td class="rowlbl">Egresos totales (pendiente + comprometido)</td>`+fs.egresos.map(v=>`<td style="color:var(--bad)">${Mn2(v)}</td>`).join('')+'</tr>';
+  h+=`<tr class="gastos"><td class="rowlbl">Ingresos (cobros)</td>`+fs.ingresos.map(v=>`<td style="color:var(--ok)">${Mn2(v)}</td>`).join('')+'</tr>';
+  h+=`<tr class="gastos"><td class="rowlbl">💰 Disponibilidad en caja (acum.)</td>`+fs.disponibilidad.map(v=>`<td style="color:${v>=0?'var(--acc)':'var(--bad)'};font-weight:800">${Mn2(v)}</td>`).join('')+'</tr>';
+  h+='</tbody></table></div>';
+  return h;
+}
+
+function render(d){
+  const r=d.resumen;
+  document.getElementById('obra').textContent=`${d.codigo} · Control economico y flujo de caja`;
+  document.getElementById('meta').textContent=`${d.obra} · actualizado ${d.actualizado}`;
+  const ads=r.adicionales||[];
+  const adV=ads.reduce((a,x)=>a+x.venta_con_iva,0), adO=ads.reduce((a,x)=>a+x.objetivo_con_iva,0);
+  let h;
+  if(ads.length){
+    h=`<div class="kpis">
+      ${kpi('Contrato BASE (venta, c/IVA)', gs(r.contrato_con_iva), true)}
+      ${kpi('➕ Adicional '+ads.map(a=>a.cod).join('+')+' (aprobado)', gs(adV), true)}
+      ${kpi('Venta TOTAL (base + adic.)', gs(r.contrato_con_iva+adV), true)}
+      ${kpi('Costo objetivo TOTAL', gs(r.objetivo_con_iva+adO), true)}
+      ${kpi('Margen base', gs(r.margen_gs)+' · '+r.margen_pct+'%')}
+      ${kpi('Margen adicional', gs(adV-adO)+' · '+(adV?((adV-adO)/adV*100).toFixed(1):0)+'%')}
+      ${kpi('Margen TOTAL', gs(r.margen_gs+adV-adO)+' · '+((r.margen_gs+adV-adO)/(r.contrato_con_iva+adV)*100).toFixed(1)+'%')}
+      ${kpi('k / consumido', 'k '+r.k+' · '+r.consumido_pct+'%')}
+    </div>
+    <div class="note">Adicionales identificados APARTE del contrato base: ${ads.map(a=>`<b>${a.cod}</b> · ${a.nombre} · ${gs(a.venta_con_iva)} · cobro ${a.cobro} (${a.oferta||''})`).join(' — ')}.</div>`;
+  }else{
+    h=`<div class="kpis">
+    ${kpi('Contrato (venta, c/IVA)', gs(r.contrato_con_iva), true)}
+    ${kpi('Costo objetivo (c/IVA)', gs(r.objetivo_con_iva), true)}
+    ${kpi('Margen objetivo', gs(r.margen_gs)+' · '+r.margen_pct+'%')}
+    ${kpi('k / consumido', 'k '+r.k+' · '+r.consumido_pct+'%')}
+  </div>`;
+  }
+  h+=`<h2>Se me va el costo? — Objetivo vs. comprometido por capitulo</h2><div class="card"><table>
+    <thead><tr><th>Capitulo</th><th>Objetivo</th><th>Comprometido</th><th>% consumido</th><th>Desvio</th></tr></thead><tbody>`;
+  const esAd=c=>c.cap.startsWith('AD');
+  const caps=[...d.capitulos.filter(c=>!esAd(c)),...d.capitulos.filter(esAd)];
+  const fila=c=>{const pc=c.objetivo? c.comprometido/c.objetivo*100:0;
+    const col=pc>100?'var(--bad)':pc>90?'var(--warn)':'var(--ok)';
+    return `<tr style="${esAd(c)?'background:rgba(91,143,214,.08)':''}"><td>${esAd(c)?'➕ ':''}${c.cap} · ${c.nombre}</td><td>${f2(c.objetivo)}</td><td>${f2(c.comprometido)}</td>
+      <td>${pc.toFixed(0)}%<div class="bar"><i style="width:${Math.min(pc,100)}%;background:${col}"></i></div></td>
+      <td style="color:${c.desvio>0?'var(--bad)':'var(--mut)'}">${c.desvio>0?'+':''}${f2(c.desvio)}</td></tr>`;};
+  const hayAd=caps.some(esAd);
+  caps.filter(c=>!esAd(c)).forEach(c=>{h+=fila(c);});
+  if(hayAd){
+    const bo=caps.filter(c=>!esAd(c)).reduce((a,c)=>a+c.objetivo,0), bc=caps.filter(c=>!esAd(c)).reduce((a,c)=>a+c.comprometido,0);
+    h+=`<tr class="tot"><td>Subtotal CONTRATO BASE</td><td>${f2(bo)}</td><td>${f2(bc)}</td><td>${bo?(bc/bo*100).toFixed(0):0}%</td><td></td></tr>`;
+    caps.filter(esAd).forEach(c=>{h+=fila(c);});
+  }
+  const to=caps.reduce((a,c)=>a+c.objetivo,0), tc=caps.reduce((a,c)=>a+c.comprometido,0);
+  h+=`<tr class="tot"><td>TOTAL${hayAd?' (base + adicionales)':''}</td><td>${f2(to)}</td><td>${f2(tc)}</td><td>${to?(tc/to*100).toFixed(0):0}%</td><td></td></tr>`;
+  h+=`</tbody></table></div>`;
+  if(d.flujo&&d.flujo.length){
+  h+=`<h2>Flujo de caja proyectado</h2><div class="card">${chart(d.flujo)}
+    <div class="legend"><span><b style="background:#2fa76a"></b>Ingresos acum.</span>
+      <span><b style="background:#e0555f"></b>Egresos acum.</span>
+      <span><b style="background:#5b8fd6"></b>Caja neta acum.</span></div>`;
+  const lo=d.flujo.reduce((m,f)=>f.neto_acum<m.neto_acum?f:m,d.flujo[0]);
+  h+=`<div class="hl">Punto mas bajo de caja: <b>${gs(lo.neto_acum)}</b> en ${lo.mes}. ${lo.neto_acum>=0?'La obra se autofinancia — no requiere capital propio bajo el esquema de cobro asumido.':'Exposicion negativa: hay que aportar capital propio en ese momento.'}</div>`;
+  h+=`<div class="note">Ingresos = ${d.esquema_cobro}. ATENCION: ESQUEMA ASUMIDO — confirmar hitos reales de cobro. Egresos: reparto del objetivo por cronograma (pago ~ ejecucion).</div></div>`;
+  }
+  if(d.flujo_semanal){
+    h+=`<h2>Flujo de caja semanal — producción pendiente por rubro y gastos comprometidos</h2><div class="card">${flujoSemanal(d.flujo_semanal)}
+      <div class="note">Producción pendiente = objetivo del rubro menos lo ya comprometido, repartido entre las semanas del cronograma en que ese rubro tiene tareas (fuente: Cronograma_FF2026_EDITABLE1.xlsx). Pagos pendientes = compras aún NO pagadas (autorizadas o por autorizar), ubicadas en su fecha real de pago (vencimiento marcado, +30 días si es crédito, o fecha de factura si es contado). Lo ya pagado no aparece acá pero sí descuenta en Egresos y Disponibilidad. En millones de Gs.</div></div>`;
+  }
+  if(d.flujo&&d.flujo.length){h+=`<h2>Detalle mensual</h2><div class="card"><table>
+    <thead><tr><th>Mes</th><th>Ingreso</th><th>Egreso</th><th>Caja neta acum.</th></tr></thead><tbody>`;
+  d.flujo.forEach(f=>{h+=`<tr><td>${f.mes}</td><td style="color:var(--ok)">${f2(f.ingreso)}</td>
+    <td style="color:var(--bad)">${f2(f.egreso)}</td><td style="color:${f.neto_acum>=0?'var(--acc)':'var(--bad)'}">${f2(f.neto_acum)}</td></tr>`;});
+  h+=`</tbody></table></div>`;}
+  document.getElementById('app').innerHTML=h;
+}
+
+fetch('economia.json?'+Date.now()).then(r=>r.json()).then(render).catch(()=>render(DATA));
+</script></body></html>
