@@ -100,11 +100,266 @@ const DATA = {
       "consumido_pct": 0.0
     }
   ],
-  "flujo": [],
-  "flujo_supuesto": true,
-  "esquema_cobro": "PENDIENTE: definir forma de cobro con el cliente",
+  "flujo": [
+    {
+      "mes": "2026-09",
+      "ingreso": 154464300,
+      "egreso": 84183348,
+      "ing_acum": 154464300,
+      "egr_acum": 84183348,
+      "neto_acum": 70280952
+    },
+    {
+      "mes": "2026-10",
+      "ingreso": 154464300,
+      "egreso": 74423098,
+      "ing_acum": 308928600,
+      "egr_acum": 158606446,
+      "neto_acum": 150322154
+    },
+    {
+      "mes": "2026-11",
+      "ingreso": 34325400,
+      "egreso": 48697208,
+      "ing_acum": 343254000,
+      "egr_acum": 207303654,
+      "neto_acum": 135950346
+    }
+  ],
+  "flujo_supuesto": false,
+  "esquema_cobro": "plan de pagos entregado al cliente (45% anticipo · 25% fin fundaciones · 20% inicio chapas · 10% término) · egresos reales por fecha de pago (crédito 30d = +30 días) + resto del objetivo según cronograma",
   "necesidad_caja": 0,
-  "notas_materiales": "Vigas de fundación H°A° (RU.ESHA.0121) SIN costo objetivo cargado en el PLANIFICADO — corregir y re-extraer."
+  "notas_materiales": "Vigas de fundación H°A° (RU.ESHA.0121) SIN costo objetivo cargado en el PLANIFICADO — corregir y re-extraer.",
+  "pico_exposicion": {
+    "mes": "2026-09",
+    "monto": 70280952
+  },
+  "flujo_semanal": {
+    "semanas": [
+      {
+        "semana": 1,
+        "fecha": "2026-09-07",
+        "mes": "SEPTIEMBRE 2026"
+      },
+      {
+        "semana": 2,
+        "fecha": "2026-09-14",
+        "mes": "SEPTIEMBRE 2026"
+      },
+      {
+        "semana": 3,
+        "fecha": "2026-09-21",
+        "mes": "SEPTIEMBRE 2026"
+      },
+      {
+        "semana": 4,
+        "fecha": "2026-09-28",
+        "mes": "SEPTIEMBRE 2026"
+      },
+      {
+        "semana": 5,
+        "fecha": "2026-10-05",
+        "mes": "OCTUBRE 2026"
+      },
+      {
+        "semana": 6,
+        "fecha": "2026-10-12",
+        "mes": "OCTUBRE 2026"
+      },
+      {
+        "semana": 7,
+        "fecha": "2026-10-19",
+        "mes": "OCTUBRE 2026"
+      },
+      {
+        "semana": 8,
+        "fecha": "2026-10-26",
+        "mes": "OCTUBRE 2026"
+      },
+      {
+        "semana": 9,
+        "fecha": "2026-11-02",
+        "mes": "NOVIEMBRE 2026"
+      },
+      {
+        "semana": 10,
+        "fecha": "2026-11-09",
+        "mes": "NOVIEMBRE 2026"
+      },
+      {
+        "semana": 11,
+        "fecha": "2026-11-16",
+        "mes": "NOVIEMBRE 2026"
+      },
+      {
+        "semana": 12,
+        "fecha": "2026-11-23",
+        "mes": "NOVIEMBRE 2026"
+      }
+    ],
+    "filas": [
+      {
+        "cap": "A",
+        "nombre": "Trabajos preliminares",
+        "valores": [
+          5593000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cap": "C",
+        "nombre": "Estructura H°A°",
+        "valores": [
+          4582874,
+          4582874,
+          4582874,
+          4582874,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cap": "D",
+        "nombre": "Estructura metálica cubierta",
+        "valores": [
+          13296713,
+          13296713,
+          13296713,
+          13296713,
+          13296713,
+          13296713,
+          13296713,
+          13296713,
+          13296713,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "cap": "F",
+        "nombre": "Canaletas y cerramientos",
+        "valores": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14164248,
+          14164248,
+          14164248,
+          0,
+          0
+        ]
+      },
+      {
+        "cap": "CI",
+        "nombre": "Costes indirectos",
+        "valores": [
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000,
+          1768000
+        ]
+      }
+    ],
+    "gastos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "gastos_total": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ingresos": [
+      154464300,
+      0,
+      0,
+      85813500,
+      0,
+      0,
+      68650800,
+      0,
+      0,
+      0,
+      34325400,
+      0
+    ],
+    "egresos": [
+      25240587,
+      19647587,
+      19647587,
+      19647587,
+      15064713,
+      15064713,
+      15064713,
+      29228961,
+      29228961,
+      15932248,
+      1768000,
+      1768000
+    ],
+    "disponibilidad": [
+      129223713,
+      109576126,
+      89928539,
+      156094452,
+      141029739,
+      125965026,
+      179551113,
+      150322152,
+      121093191,
+      105160943,
+      137718343,
+      135950343
+    ]
+  }
 };
 
 const f2=n=>new Intl.NumberFormat('es-PY').format(Math.round(n));
@@ -211,11 +466,11 @@ function render(d){
       <span><b style="background:#5b8fd6"></b>Caja neta acum.</span></div>`;
   const lo=d.flujo.reduce((m,f)=>f.neto_acum<m.neto_acum?f:m,d.flujo[0]);
   h+=`<div class="hl">Punto mas bajo de caja: <b>${gs(lo.neto_acum)}</b> en ${lo.mes}. ${lo.neto_acum>=0?'La obra se autofinancia — no requiere capital propio bajo el esquema de cobro asumido.':'Exposicion negativa: hay que aportar capital propio en ese momento.'}</div>`;
-  h+=`<div class="note">Ingresos = ${d.esquema_cobro}. ATENCION: ESQUEMA ASUMIDO — confirmar hitos reales de cobro. Egresos: reparto del objetivo por cronograma (pago ~ ejecucion).</div></div>`;
+  h+=`<div class="note">Ingresos = ${d.esquema_cobro}. ATENCION: fechas TENTATIVAS (inicio 07/09 segun cronograma entregado) — los cobros son por hito de avance; si la obra se corre, ajustar cronograma.json. Egresos: reparto del objetivo por cronograma (pago ~ ejecucion).</div></div>`;
   }
   if(d.flujo_semanal){
     h+=`<h2>Flujo de caja semanal — producción pendiente por rubro y gastos comprometidos</h2><div class="card">${flujoSemanal(d.flujo_semanal)}
-      <div class="note">Producción pendiente = objetivo del rubro menos lo ya comprometido, repartido entre las semanas del cronograma en que ese rubro tiene tareas (fuente: Cronograma_FF2026_EDITABLE1.xlsx). Pagos pendientes = compras aún NO pagadas (autorizadas o por autorizar), ubicadas en su fecha real de pago (vencimiento marcado, +30 días si es crédito, o fecha de factura si es contado). Lo ya pagado no aparece acá pero sí descuenta en Egresos y Disponibilidad. En millones de Gs.</div></div>`;
+      <div class="note">Producción pendiente = objetivo del rubro menos lo ya comprometido, repartido entre las semanas del cronograma en que ese rubro tiene tareas (fuente: cronograma entregado al cliente 01/09/2026). Pagos pendientes = compras aún NO pagadas (autorizadas o por autorizar), ubicadas en su fecha real de pago (vencimiento marcado, +30 días si es crédito, o fecha de factura si es contado). Lo ya pagado no aparece acá pero sí descuenta en Egresos y Disponibilidad. En millones de Gs.</div></div>`;
   }
   if(d.flujo&&d.flujo.length){h+=`<h2>Detalle mensual</h2><div class="card"><table>
     <thead><tr><th>Mes</th><th>Ingreso</th><th>Egreso</th><th>Caja neta acum.</th></tr></thead><tbody>`;
