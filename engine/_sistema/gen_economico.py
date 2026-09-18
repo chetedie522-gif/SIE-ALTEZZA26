@@ -147,11 +147,11 @@ function render(d){
       <span><b style="background:#5b8fd6"></b>Caja neta acum.</span></div>`;
   const lo=d.flujo.reduce((m,f)=>f.neto_acum<m.neto_acum?f:m,d.flujo[0]);
   h+=`<div class="hl">Punto mas bajo de caja: <b>${gs(lo.neto_acum)}</b> en ${lo.mes}. ${lo.neto_acum>=0?'La obra se autofinancia — no requiere capital propio bajo el esquema de cobro asumido.':'Exposicion negativa: hay que aportar capital propio en ese momento.'}</div>`;
-  h+=`<div class="note">Ingresos = ${d.esquema_cobro}. ATENCION: ESQUEMA ASUMIDO — confirmar hitos reales de cobro. Egresos: reparto del objetivo por cronograma (pago ~ ejecucion).</div></div>`;
+  h+=`<div class="note">Ingresos = ${d.esquema_cobro}. ATENCION: fechas TENTATIVAS (inicio 07/09 segun cronograma entregado) — los cobros son por hito de avance; si la obra se corre, ajustar cronograma.json. Egresos: reparto del objetivo por cronograma (pago ~ ejecucion).</div></div>`;
   }
   if(d.flujo_semanal){
     h+=`<h2>Flujo de caja semanal — producción pendiente por rubro y gastos comprometidos</h2><div class="card">${flujoSemanal(d.flujo_semanal)}
-      <div class="note">Producción pendiente = objetivo del rubro menos lo ya comprometido, repartido entre las semanas del cronograma en que ese rubro tiene tareas (fuente: Cronograma_FF2026_EDITABLE1.xlsx). Pagos pendientes = compras aún NO pagadas (autorizadas o por autorizar), ubicadas en su fecha real de pago (vencimiento marcado, +30 días si es crédito, o fecha de factura si es contado). Lo ya pagado no aparece acá pero sí descuenta en Egresos y Disponibilidad. En millones de Gs.</div></div>`;
+      <div class="note">Producción pendiente = objetivo del rubro menos lo ya comprometido, repartido entre las semanas del cronograma en que ese rubro tiene tareas (fuente: cronograma entregado al cliente 01/09/2026). Pagos pendientes = compras aún NO pagadas (autorizadas o por autorizar), ubicadas en su fecha real de pago (vencimiento marcado, +30 días si es crédito, o fecha de factura si es contado). Lo ya pagado no aparece acá pero sí descuenta en Egresos y Disponibilidad. En millones de Gs.</div></div>`;
   }
   if(d.flujo&&d.flujo.length){h+=`<h2>Detalle mensual</h2><div class="card"><table>
     <thead><tr><th>Mes</th><th>Ingreso</th><th>Egreso</th><th>Caja neta acum.</th></tr></thead><tbody>`;

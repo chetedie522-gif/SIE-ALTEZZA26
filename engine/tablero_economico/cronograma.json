@@ -1,0 +1,128 @@
+{
+ "fuente": "00 - ENTREGADOS/010926_CRONOGRAMADETRABAJOS_V2_.pdf (entregado al cliente 01/09/2026). Inicio 07/09/2026 TENTATIVO. Si la obra se corre: editar 'semanas' y 'desembolsos' acá y volver a publicar.",
+ "semanas": [
+  {
+   "semana": 1,
+   "fecha": "2026-09-07",
+   "mes": "SEPTIEMBRE 2026"
+  },
+  {
+   "semana": 2,
+   "fecha": "2026-09-14",
+   "mes": "SEPTIEMBRE 2026"
+  },
+  {
+   "semana": 3,
+   "fecha": "2026-09-21",
+   "mes": "SEPTIEMBRE 2026"
+  },
+  {
+   "semana": 4,
+   "fecha": "2026-09-28",
+   "mes": "SEPTIEMBRE 2026"
+  },
+  {
+   "semana": 5,
+   "fecha": "2026-10-05",
+   "mes": "OCTUBRE 2026"
+  },
+  {
+   "semana": 6,
+   "fecha": "2026-10-12",
+   "mes": "OCTUBRE 2026"
+  },
+  {
+   "semana": 7,
+   "fecha": "2026-10-19",
+   "mes": "OCTUBRE 2026"
+  },
+  {
+   "semana": 8,
+   "fecha": "2026-10-26",
+   "mes": "OCTUBRE 2026"
+  },
+  {
+   "semana": 9,
+   "fecha": "2026-11-02",
+   "mes": "NOVIEMBRE 2026"
+  },
+  {
+   "semana": 10,
+   "fecha": "2026-11-09",
+   "mes": "NOVIEMBRE 2026"
+  },
+  {
+   "semana": 11,
+   "fecha": "2026-11-16",
+   "mes": "NOVIEMBRE 2026"
+  },
+  {
+   "semana": 12,
+   "fecha": "2026-11-23",
+   "mes": "NOVIEMBRE 2026"
+  }
+ ],
+ "cap_semanas": {
+  "A": [
+   1
+  ],
+  "C": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "D": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "F": [
+   8,
+   9,
+   10
+  ],
+  "CI": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ]
+ },
+ "desembolsos": [
+  {
+   "fecha": "2026-09-04",
+   "concepto": "Anticipo — inicio de los trabajos (45%)",
+   "monto": 154464300
+  },
+  {
+   "fecha": "2026-10-02",
+   "concepto": "Término de fundaciones (25%)",
+   "monto": 85813500
+  },
+  {
+   "fecha": "2026-10-23",
+   "concepto": "Inicio de montaje de chapas (20%)",
+   "monto": 68650800
+  },
+  {
+   "fecha": "2026-11-20",
+   "concepto": "Término de los trabajos (10%)",
+   "monto": 34325400
+  }
+ ]
+}

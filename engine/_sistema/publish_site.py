@@ -59,6 +59,8 @@ sync_compras_web.main()
 
 # 1) recalcular datos derivados
 recompute_capitulos()
+run("compute_flujo_live.py")     # flujo de caja en vivo (reescribe economia.json, conserva capítulos)
+run("compute_flujo_semanal.py")  # flujo semanal por rubro (usa capítulos recién actualizados)
 
 # 2) regenerar los HTML de los tableros
 run("gen_economico.py")
