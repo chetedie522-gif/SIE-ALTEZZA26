@@ -11,7 +11,7 @@
     "margen_gs": 135950346,
     "margen_pct": 39.6,
     "k": 1.656,
-    "comprometido": 23358860,
+    "comprometido": 33408860,
     "ejecutado": 0,
     "consumido_pct": 0,
     "margen_proyectado": 135950346
@@ -21,28 +21,28 @@
       "cap": "A",
       "nombre": "Trabajos preliminares",
       "objetivo": 5593000,
-      "comprometido": 0,
+      "comprometido": 2450000,
       "real": 0,
       "desvio": 0,
-      "consumido_pct": 0.0
+      "consumido_pct": 43.8
     },
     {
       "cap": "C",
       "nombre": "Estructura H°A°",
       "objetivo": 18331497,
-      "comprometido": 14988100,
+      "comprometido": 19088100,
       "real": 0,
-      "desvio": 0,
-      "consumido_pct": 81.8
+      "desvio": 756603,
+      "consumido_pct": 104.1
     },
     {
       "cap": "D",
       "nombre": "Estructura metálica cubierta",
       "objetivo": 119670414,
-      "comprometido": 8040760,
+      "comprometido": 11540760,
       "real": 0,
       "desvio": 0,
-      "consumido_pct": 6.7
+      "consumido_pct": 9.6
     },
     {
       "cap": "F",
@@ -67,26 +67,26 @@
     {
       "mes": "2026-09",
       "ingreso": 154464300,
-      "egreso": 88933875,
+      "egreso": 91402699,
       "ing_acum": 154464300,
-      "egr_acum": 88933875,
-      "neto_acum": 65530425
+      "egr_acum": 91402699,
+      "neto_acum": 63061601
     },
     {
       "mes": "2026-10",
       "ingreso": 154464300,
-      "egreso": 75159745,
+      "egreso": 75051742,
       "ing_acum": 308928600,
-      "egr_acum": 164093620,
-      "neto_acum": 144834980
+      "egr_acum": 166454441,
+      "neto_acum": 142474159
     },
     {
       "mes": "2026-11",
       "ingreso": 34325400,
-      "egreso": 43210034,
+      "egreso": 40849212,
       "ing_acum": 343254000,
-      "egr_acum": 207303654,
-      "neto_acum": 135950346
+      "egr_acum": 207303653,
+      "neto_acum": 135950347
     }
   ],
   "flujo_supuesto": false,
@@ -95,7 +95,7 @@
   "notas_materiales": "Vigas de fundación H°A° (RU.ESHA.0121) SIN costo objetivo cargado en el PLANIFICADO — corregir y re-extraer.",
   "pico_exposicion": {
     "mes": "2026-09",
-    "monto": 65530425
+    "monto": 63061601
   },
   "flujo_semanal": {
     "semanas": [
@@ -165,7 +165,7 @@
         "cap": "A",
         "nombre": "Trabajos preliminares",
         "valores": [
-          5593000,
+          3143000,
           0,
           0,
           0,
@@ -183,10 +183,10 @@
         "cap": "C",
         "nombre": "Estructura H°A°",
         "valores": [
-          835849,
-          835849,
-          835849,
-          835849,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -201,15 +201,15 @@
         "cap": "D",
         "nombre": "Estructura metálica cubierta",
         "valores": [
-          12403295,
-          12403295,
-          12403295,
-          12403295,
-          12403295,
-          12403295,
-          12403295,
-          12403295,
-          12403295,
+          12014406,
+          12014406,
+          12014406,
+          12014406,
+          12014406,
+          12014406,
+          12014406,
+          12014406,
+          12014406,
           0,
           0,
           0
@@ -256,7 +256,7 @@
       0,
       0,
       3100000,
-      3100000,
+      0,
       5620000,
       0,
       0,
@@ -268,10 +268,10 @@
     ],
     "gastos_total": [
       0,
-      2765500,
+      9315500,
       11140760,
       3430000,
-      5620000,
+      9120000,
       402600,
       0,
       0,
@@ -295,32 +295,32 @@
       0
     ],
     "egresos": [
-      20572644,
-      17745144,
-      26120404,
-      18409644,
-      19763795,
-      14546395,
-      14143795,
-      28308043,
-      28308043,
+      16897906,
+      23070406,
+      24895666,
+      17184906,
+      22874906,
+      14157506,
+      13754906,
+      27919154,
+      27919154,
       15904748,
       1740500,
       1740500
     ],
     "disponibilidad": [
-      133891656,
-      116146512,
-      90026108,
-      157429964,
-      137666169,
-      123119774,
-      177626779,
-      149318736,
-      121010693,
-      105105945,
-      137690845,
-      135950345
+      137566394,
+      114495988,
+      89600322,
+      158228916,
+      135354010,
+      121196504,
+      176092398,
+      148173244,
+      120254090,
+      104349342,
+      136934242,
+      135193742
     ]
   }
 }
